@@ -156,7 +156,7 @@ export const Footer = () => {
 
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
           <p className="text-zinc-400 text-sm">
-            Fliq © 2025. All rights reserved.
+            Made with 💙 by Ashish Mohapatra
           </p>
           <div className="flex items-center gap-2 text-zinc-400 text-sm">
             <Link
