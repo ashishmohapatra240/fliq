@@ -6,6 +6,7 @@ import { FaFacebook, FaXTwitter } from "react-icons/fa6";
 import { IoChatboxOutline, IoShareSocialOutline } from "react-icons/io5";
 import { FaInstagram } from "react-icons/fa";
 import { cn } from "@/lib/utils";
+import { useRouter } from "next/navigation";
 
 interface UserProfileProps {
   className?: string;
@@ -26,6 +27,7 @@ export function UserProfile({
   marketsCreated = 84,
   volume = "$124k",
 }: UserProfileProps) {
+  const router = useRouter();
   return (
     <section
       className={cn(
@@ -58,6 +60,9 @@ export function UserProfile({
                     variant="default"
                     size="default"
                     aria-label="Send message"
+                    onClick={() => {
+                      router.push("/chat");
+                    }}
                   >
                     <IoChatboxOutline className="h-4 w-4" />
                   </IconButton>
@@ -144,6 +149,9 @@ export function UserProfile({
                   variant="default"
                   size="default"
                   aria-label="Send message"
+                  onClick={() => {
+                    router.push("/chat");
+                  }}
                 >
                   <IoChatboxOutline className="h-5 w-5" />
                 </IconButton>

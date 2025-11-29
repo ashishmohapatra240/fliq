@@ -30,7 +30,7 @@ export function ChatInfoPanel({ className }: ChatInfoPanelProps) {
             </div>
             <div className="flex-1 min-w-0 pt-1">
               <div className="flex items-center gap-2">
-                <h3 className="text-xl font-bold text-zinc-100">BERRY🍀</h3>
+                <h3 className="text-xl font-bold text-zinc-100">ᴮᴱᴿᴿᵞ🍀</h3>
               </div>
               <p className="text-xs text-zinc-400 mt-2 leading-relaxed line-clamp-3">
                 Don't be afraid to start over again. This time, you're not starting from scratch...

@@ -1,6 +1,8 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { MarketCardProps } from "@/types/market";
+import { IconButton } from "@/components/ui/icon-button";
+import { HiOutlineShare } from "react-icons/hi";
 
 export function MarketCard({
   title,
@@ -102,15 +104,30 @@ export function MarketCard({
             </div>
             <div className="text-zinc-600 text-xs">•</div>
             <div className="text-zinc-500 text-xs">{createdTime}</div>
-            <div className="flex items-center ml-1">
-              <div className="w-2 h-2 bg-primary-blue rounded-full" />
+            <div className="flex items-center ml-1 gap-1">
+              <Image
+                src="/icons/water-drop.svg"
+                alt="BERRY"
+                height={16}
+                width={16}
+                className="object-cover"
+                unoptimized
+              />
+              <Image
+                src="/icons/star.svg"
+                alt="BERRY"
+                height={16}
+                width={16}
+                className="object-cover"
+                unoptimized
+              />
             </div>
           </div>
         </div>
         <div className="flex items-center gap-2">
-          <div className="w-5 h-5 flex items-center justify-center">
-            <div className="w-4 h-4 bg-zinc-600 rounded-sm opacity-50" />
-          </div>
+          <IconButton size="sm" variant="default">
+            <HiOutlineShare className="w-4 h-4" />
+          </IconButton>
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@ import { Message, MessagePreview } from "@/types/chat";
 export const MOCK_MESSAGES: MessagePreview[] = [
   {
     id: "1",
-    name: "BERRY🍀",
+    name: "ᴮᴱᴿᴿᵞ🍀",
     avatar: "/images/creators/berry.png",
     lastMessage: "go on guys",
     date: "Sep 22, 2025",
@@ -12,7 +12,7 @@ export const MOCK_MESSAGES: MessagePreview[] = [
   },
   {
     id: "2",
-    name: "BERRY🍀",
+    name: "ᴮᴱᴿᴿᵞ🍀",
     avatar: "/images/creators/berry.png",
     lastMessage: "new market is up 😋",
     date: "Sep 22, 2025",
@@ -41,7 +41,7 @@ export const MOCK_CHAT_MESSAGES: Message[] = [
       image: "/images/creators/berry.png",
       volume: "$124k",
       endsIn: "2hrs 48 mins",
-      createdBy: "Cyberwin",
+      createdBy: "ᴮᴱᴿᴿᵞ🍀",
       createdTime: "2d ago",
       type: "list",
       positions: [
