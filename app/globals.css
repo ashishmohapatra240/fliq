@@ -1,26 +1,59 @@
 @import "tailwindcss";
+@plugin "@toolwind/corner-shape";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0C0C0F;
+  --foreground: #ffffff;
+  --primary-green: #06BC06;
+  --primary-blue: #4364F7;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-inter);
   --font-mono: var(--font-geist-mono);
+  --color-primary-green: #06BC06;
+  --color-primary-blue: #4364F7;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ededed;
+    --foreground: #0a0a0a;
+    --primary-green: #06BC06;
+    --primary-blue: #4364F7;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #18181b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3f3f46;
+  border-radius: 4px;
+  border: 1px solid #27272a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #52525b;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3f3f46 #18181b;
 }
