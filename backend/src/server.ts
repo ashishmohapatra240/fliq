@@ -13,7 +13,7 @@ function generateId(): string {
   return Math.random().toString(36).substring(2, 9) + Date.now().toString(36);
 }
 
-const PORT = 8080;
+const PORT = 8091;
 const wss = new WebSocketServer({ port: PORT });
 
 console.log(`WebSocket server running on ws://localhost:${PORT}`);
