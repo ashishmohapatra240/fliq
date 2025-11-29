@@ -8,7 +8,7 @@ import type {
 } from "@/types/chat";
 import type { MarketCardProps } from "@/types/market";
 
-const WS_URL = "ws://localhost:8080";
+const WS_URL = "wss://api.fliq.ashishmohapatra.in";
 
 interface UseChatWebSocketReturn {
   messages: WsChatMessage[];
