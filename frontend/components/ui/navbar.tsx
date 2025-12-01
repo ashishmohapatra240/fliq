@@ -89,7 +89,7 @@ export const Navbar = () => {
             </div>
             <button
               onClick={toggleMenu}
-              className="text-white p-2 hover:bg-zinc-900 rounded-lg transition-colors"
+              className="text-white p-2 hover:bg-zinc-900 rounded-xl transition-colors"
               aria-label="Toggle menu"
             >
               {isOpen ? (
@@ -120,7 +120,7 @@ export const Navbar = () => {
                         setIsOpen(false);
                       }}
                       className={cn(
-                        "py-3 px-2 rounded-lg flex items-center gap-2.5 transition-colors",
+                        "py-3 px-2 rounded-xl flex items-center gap-2.5 transition-colors",
                         isActive
                           ? "bg-zinc-900 text-white"
                           : "text-zinc-500 hover:text-white hover:bg-zinc-900/50"

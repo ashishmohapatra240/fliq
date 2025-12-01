@@ -48,7 +48,7 @@ export function ChatSidebar({ className, onSelect, selectedId }: ChatSidebarProp
               )}
             >
               <div className="relative">
-                <div className="relative h-10 w-10 rounded-full overflow-hidden bg-zinc-800">
+                <div className="relative h-10 w-10 rounded-xl overflow-hidden bg-zinc-800">
                   <Image
                     src={msg.avatar}
                     alt={msg.name}
@@ -58,7 +58,7 @@ export function ChatSidebar({ className, onSelect, selectedId }: ChatSidebarProp
                   />
                 </div>
                 {msg.online && (
-                  <div className="absolute bottom-0 right-0 w-2.5 h-2.5 bg-primary-green border-2 border-background rounded-full" />
+                  <div className="absolute bottom-0 right-0 w-2.5 h-2.5 bg-primary-green border-2 border-background rounded-xl" />
                 )}
               </div>
               

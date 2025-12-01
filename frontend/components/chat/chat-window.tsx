@@ -74,7 +74,7 @@ export function ChatWindow({ className }: ChatWindowProps) {
     <div className={cn("flex flex-col h-full bg-background", className)}>
       <div className="h-16 px-6 border-b border-zinc-800 flex items-center justify-between shrink-0">
         <div className="flex items-center gap-3">
-          <div className="relative h-8 w-8 rounded-full overflow-hidden bg-zinc-800 flex items-center justify-center">
+          <div className="relative h-8 w-8 rounded-xl overflow-hidden bg-zinc-800 flex items-center justify-center">
             <Image
               src="/images/creators/berry.png"
               alt="BERRY"
@@ -107,7 +107,7 @@ export function ChatWindow({ className }: ChatWindowProps) {
                 isMe ? "ml-auto flex-row-reverse" : ""
               )}
             >
-              <div className="relative h-8 w-8 flex-shrink-0 rounded-full overflow-hidden bg-zinc-800 self-start mt-1">
+              <div className="relative h-8 w-8 flex-shrink-0 rounded-xl overflow-hidden bg-zinc-800 self-start mt-1">
                 <Image
                   src={msg.senderAvatar || "/images/creators/berry.png"}
                   alt="User"
@@ -176,7 +176,7 @@ export function ChatWindow({ className }: ChatWindowProps) {
           <Button
             onClick={handleSend}
             disabled={!isConnected || !inputValue.trim()}
-            className="bg-zinc-800 hover:bg-zinc-700 text-zinc-200 rounded-lg h-9 px-4 text-sm font-medium disabled:opacity-50"
+            className="bg-zinc-800 hover:bg-zinc-700 text-zinc-200 rounded-xl h-9 px-4 text-sm font-medium disabled:opacity-50"
           >
             Send
           </Button>

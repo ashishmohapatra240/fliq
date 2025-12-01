@@ -19,7 +19,7 @@ export function ChatInfoPanel({ className }: ChatInfoPanelProps) {
         {/* Profile Section */}
         <div className="space-y-4">
           <div className="flex items-start gap-4">
-            <div className="relative h-16 w-16 flex-shrink-0 rounded-full overflow-hidden bg-zinc-800">
+            <div className="relative h-16 w-16 flex-shrink-0 rounded-xl overflow-hidden bg-zinc-800">
               <Image
                 src="/images/creators/berry.png"
                 alt="BERRY"

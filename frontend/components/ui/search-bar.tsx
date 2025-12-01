@@ -11,7 +11,7 @@ export const SearchBar = React.forwardRef<
   return (
     <div
       className={cn(
-        "flex-1 h-12 px-3 py-2.5 bg-zinc-900 rounded-full shadow-[inset_0px_1px_4px_0px_rgba(255,255,255,0.01)] shadow-[inset_0px_0px_0px_1px_rgba(0,0,0,0.12)] inline-flex items-center gap-3.5 corner-squircle",
+        "flex-1 h-12 px-3 py-2.5 bg-zinc-900 rounded-xl shadow-[inset_0px_1px_4px_0px_rgba(255,255,255,0.01)] shadow-[inset_0px_0px_0px_1px_rgba(0,0,0,0.12)] inline-flex items-center gap-3.5 ",
         className
       )}
     >

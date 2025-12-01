@@ -18,12 +18,12 @@ export function MarketCard({
   return (
     <div
       className={cn(
-        "w-full p-4 bg-zinc-900 rounded-4xl corner-squircle border border-zinc-800 flex flex-col gap-4 overflow-hidden",
+        "w-full p-4 bg-zinc-900 rounded-4xl  border border-zinc-800 flex flex-col gap-4 overflow-hidden",
         className
       )}
     >
       <div className="self-stretch inline-flex justify-start items-center gap-3">
-        <div className="relative w-12 h-12 flex-shrink-0 rounded-full overflow-hidden corner-squircle">
+        <div className="relative w-12 h-12 flex-shrink-0 rounded-xl overflow-hidden ">
           <Image
             src={image}
             alt={title}
@@ -56,12 +56,12 @@ export function MarketCard({
                   {pos.value}
                 </div>
                 <div className="flex justify-start items-center gap-1">
-                  <div className="h-6 px-2.5 bg-primary-green rounded-full corner-squircle flex justify-center items-center gap-2">
+                  <div className="h-6 px-2.5 bg-primary-green rounded-lg  flex justify-center items-center gap-2">
                     <div className="justify-center text-white text-xs font-bold font-mono leading-3 line-clamp-1 cursor-pointer">
                       YES
                     </div>
                   </div>
-                  <div className="h-6 px-2.5 bg-primary-blue rounded-full corner-squircle flex justify-center items-center gap-2">
+                  <div className="h-6 px-2.5 bg-primary-blue rounded-lg  flex justify-center items-center gap-2">
                     <div className="justify-center text-white text-xs font-bold font-mono leading-3 line-clamp-1 cursor-pointer">
                       NO
                     </div>
@@ -73,12 +73,12 @@ export function MarketCard({
         </div>
       ) : type === "binary" ? (
         <div className="self-stretch flex-1 py-1 inline-flex justify-center items-center gap-2">
-          <div className="flex-1 h-9 px-2.5 bg-primary-green rounded-full corner-squircle flex justify-center items-center gap-2 cursor-pointer hover:bg-primary-green/80 transition-colors">
+          <div className="flex-1 h-9 px-2.5 bg-primary-green rounded-xl  flex justify-center items-center gap-2 cursor-pointer hover:bg-primary-green/80 transition-colors">
             <div className="justify-center text-white text-xs font-bold font-mono leading-5 line-clamp-1 cursor-pointer">
               YES
             </div>
           </div>
-          <div className="flex-1 h-9 px-2.5 bg-primary-blue rounded-full corner-squircle flex justify-center items-center gap-2 cursor-pointer hover:bg-primary-blue/80 transition-colors">
+          <div className="flex-1 h-9 px-2.5 bg-primary-blue rounded-xl  flex justify-center items-center gap-2 cursor-pointer hover:bg-primary-blue/80 transition-colors">
             <div className="justify-center text-white text-xs font-bold font-mono leading-5 line-clamp-1 cursor-pointer">
               NO
             </div>

@@ -2,7 +2,7 @@ import { Chip } from "@/components/ui/chip";
 
 export function ProfileSidebar() {
   return (
-    <div className="w-full lg:w-80 xl:w-96 flex-shrink-0 p-5 bg-zinc-900 rounded-4xl corner-squircle border border-zinc-800 flex flex-col gap-4 h-fit">
+    <div className="w-full lg:w-80 xl:w-96 flex-shrink-0 p-5 bg-zinc-900 rounded-4xl  border border-zinc-800 flex flex-col gap-4 h-fit">
       <div className="pb-4 border-b border-zinc-800 flex flex-col gap-3">
         <h3 className="text-zinc-100 text-md font-bold leading-none">
           Description

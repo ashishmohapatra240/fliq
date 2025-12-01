@@ -38,7 +38,7 @@ export function UserProfile({
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-14">
         <div className="block sm:hidden space-y-4">
           <div className="flex items-start gap-3">
-            <div className="relative h-16 w-16 flex-shrink-0 rounded-full overflow-hidden">
+            <div className="relative h-16 w-16 flex-shrink-0 rounded-xl overflow-hidden">
               <Image
                 src={profileImage}
                 alt={`${username}'s profile picture`}
@@ -122,7 +122,7 @@ export function UserProfile({
         
               <div className="flex gap-4 lg:gap-6 flex-1 min-w-0">
                 <div className="flex-shrink-0">
-                  <div className="relative h-20 w-20 md:h-24 md:w-24 lg:h-32 lg:w-32 rounded-full overflow-hidden">
+                  <div className="relative h-20 w-20 md:h-24 md:w-24 lg:h-32 lg:w-32 rounded-xl overflow-hidden">
                     <Image
                       src={profileImage}
                       alt={`${username}'s profile picture`}
