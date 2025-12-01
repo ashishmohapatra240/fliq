@@ -21,7 +21,7 @@ interface UserProfileProps {
 export function UserProfile({
   className,
   profileImage = "/images/creators/berry.png",
-  username = "ᴮᴱᴿᴿᵞ🍀",
+  username = "BERRY🍀",
   bio = "Don't be afraid to start over again. This time, you're not starting from scratch, you're starting from experience.",
   joinedDate = "2 years ago",
   marketsCreated = 84,

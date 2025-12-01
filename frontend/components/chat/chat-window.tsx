@@ -85,7 +85,7 @@ export function ChatWindow({ className }: ChatWindowProps) {
           </div>
           <div className="flex items-center gap-2">
             <span className="font-semibold text-zinc-100 tracking-wider">
-              ᴮᴱᴿᴿᵞ🍀
+              BERRY🍀
             </span>
           </div>
         </div>
